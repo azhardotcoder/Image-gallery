@@ -7,7 +7,13 @@
 }
 
 body {
-  background: #0a050d;
+  background-image: linear-gradient(to right top, #000000, #150910, #1f121d, #26182c, #27203e, #212848, #163051, #003859, #003e57, #004453, #09484e, #1f4c49);
+  width: 100vw;
+  height: 80vh;
+}
+/* Hide scroll bar  */
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .message {
@@ -49,6 +55,7 @@ body {
   align-items: center;
   justify-content: center;
   margin: 10% auto;
+  
 }
 
 #backBtn,
@@ -63,6 +70,13 @@ body {
   cursor: pointer;
   transform: scale(1.1);
 }
+#heading{
+  color: white;
+  text-align: center;
+  /* margin-top: 2em; */
+  font-size: 2em;
+
+}
 
 @media screen and (max-width: 768px) {
     body {
@@ -73,6 +87,8 @@ body {
     color: white;
     text-align: center;
     display: block;
+    font-weight: 700;
+    font-size: 20px;
   }
  
   .gallery {
@@ -112,3 +128,4 @@ body {
 
     
 }
+
